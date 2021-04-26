@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="luz.carlos.desafiofoton">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DesafioFóton">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".view.MovieListActivity"
+            android:label="@string/title_activity_movie_list"
+            android:theme="@style/Theme.DesafioFóton.NoActionBar"></activity>
+        <activity
+            android:name=".view.MainActivity"
+            android:theme="@style/Theme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

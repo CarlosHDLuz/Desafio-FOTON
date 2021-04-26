@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Desafio Fóton</string>
+    <string name="instanciando_request_queue">Instaciando fila de requisições</string>
+    <string name="add_request_to_queue">Adicionando requisição a lista de requisições</string>
+    <string name="creating_request">Criando requisição</string>
+    <string name="waiting_for_answer">Esperando Resposta</string>
+    <string name="success_answer_for_request">Resposta obtida com sucesso</string>
+    <string name="failed_answer_for_request">A requisição não funionou!</string>
+    <string name="title_activity_movie_list">MovieListActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
