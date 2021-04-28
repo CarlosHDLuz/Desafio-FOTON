@@ -15,4 +15,51 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_movie_detail">Detalhes</string>
+
+
+    <string name="add_movie">Add Movie</string>
+
+    <string name="movie1_name">Nenhum filme obtido ainda</string>
+<!--    <string name="movie2_name">Freesia</string>-->
+<!--    <string name="movie3_name">Lily</string>-->
+<!--    <string name="movie4_name">Sunflower</string>-->
+<!--    <string name="movie5_name">Peony</string>-->
+<!--    <string name="movie6_name">Daisy</string>-->
+<!--    <string name="movie7_name">Lilac</string>-->
+<!--    <string name="movie8_name">Marigold</string>-->
+<!--    <string name="movie9_name">Poppy</string>-->
+<!--    <string name="movie10_name">Daffodil</string>-->
+<!--    <string name="movie11_name">Dahlia</string>-->
+<!--    <string name="movie12_name">Tulip</string>-->
+
+    <string name="movie1_description">Aqui estariam os detalhes do Filme</string>
+<!--    <string name="movie2_description">Freesias bloom during spring and are native to-->
+<!--        Africa.</string>-->
+<!--    <string name="movie3_description">Lilies have the longest in vase lifespan of any cut-->
+<!--        bloom.</string>-->
+<!--    <string name="movie4_description">Mature Sunmovies face east and are native too the United-->
+<!--        States.</string>-->
+<!--    <string name="movie5_description">Peony plants can live to be 100 years old.</string>-->
+<!--    <string name="movie6_description">Daisies are cousins with Sunmovies.</string>-->
+<!--    <string name="movie7_description">Lilacs belong to the olive family.</string>-->
+<!--    <string name="movie8_description">Marigolds come in orange, reed, maroon and yellow.</string>-->
+<!--    <string name="movie9_description">Poppies can be over 3 feet tall.</string>-->
+<!--    <string name="movie10_description">Daffodils are referred to as Lent Lilies in England</string>-->
+<!--    <string name="movie11_description">Dahlia is named after the Swedish botanist Anders-->
+<!--        Dahl</string>-->
+<!--    <string name="movie12_description">There are over 150 species of tulips.</string>-->
+
+    <string name="movie_string">Movies</string>
+<!--    <string name="movie_finder">Movie finder</string>-->
+    <string name="movie_description_edit_text">Sinópse</string>
+    <string name="movie_name_edit_text">Título</string>
+<!--    <string name="done_button_text">Done</string>-->
+<!--    <string name="fab_content_description">fab</string>-->
+    <string name="movie_image_content_description">Pôster</string>
+    <string name="loading">Carregando...</string>
+    <!--    <string name="remove_this_movie">Remove this movie</string>-->
+<!--    <string name="title_activity_add_movie">AddMovieActivity</string>-->
+
+
 </resources>
