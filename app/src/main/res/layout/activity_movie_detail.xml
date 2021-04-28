@@ -16,13 +16,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="24dp"
-            android:text="Título:"
+            android:text="@string/title"
             android:textAppearance="?attr/textAppearanceHeadline5"
             android:textStyle="bold"
 
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/movie_detail_title"
+            app:layout_constraintHorizontal_chainStyle="packed"
             />
 
         <TextView
@@ -34,10 +35,12 @@
             android:text="@string/movie1_name"
             android:textAlignment="center"
             android:textAppearance="?attr/textAppearanceHeadline5"
+            android:maxWidth="200dp"
 
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/title"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
             />
 
         <ImageView
@@ -72,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:text="Duração: "
+            android:text="@string/runtime"
 
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/movie_detail_overview"
@@ -101,7 +104,7 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:textAlignment="center"
-            android:text="Gêneros: "
+            android:text="@string/genres"
             android:textStyle="bold"
 
             app:layout_constraintTop_toBottomOf="@id/runtime"
@@ -117,6 +120,7 @@
             android:padding="16dp"
             android:textAlignment="center"
             android:text="@string/loading"
+            android:maxWidth="200dp"
 
             app:layout_constraintTop_toBottomOf="@id/movie_detail_runtime"
             app:layout_constraintStart_toEndOf="@id/genres"

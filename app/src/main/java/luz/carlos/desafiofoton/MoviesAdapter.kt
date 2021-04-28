@@ -10,7 +10,6 @@ import com.squareup.picasso.Picasso
 import luz.carlos.desafiofoton.R
 import luz.carlos.desafiofoton.TMDB_SMALL_POSTER_URL
 import luz.carlos.desafiofoton.data.Movie
-import luz.carlos.desafiofoton.movieDetail.TMDB_POSTER_URL
 
 class MoviesAdapter(private val onClick: (Movie) -> Unit) :
         ListAdapter<Movie, MoviesAdapter.MovieViewHolder>(MovieDiffCallback) {
@@ -36,14 +35,15 @@ class MoviesAdapter(private val onClick: (Movie) -> Unit) :
             currentMovie = movie
 
             movieTextView.text = movie.title
-            if (movie.poster_path != null) {
-//                movieImageView.setImageResource(movie.poster_path)
+//            if (movie.poster_path != null) {
+////                movieImageView.setImageResource(movie.poster_path)
                 Picasso.get().load(
                     TMDB_SMALL_POSTER_URL + movie.poster_path
                 ).placeholder(R.drawable.place_holder).into(movieImageView)
-            } else {
-                movieImageView.setImageResource(R.drawable.rose)
-            }
+//            } else {
+//                movieImageView.setImageResource(R.drawable.rose)
+//            }
+
         }
     }
 

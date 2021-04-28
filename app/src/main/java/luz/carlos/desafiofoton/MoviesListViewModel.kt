@@ -3,10 +3,7 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import luz.carlos.desafiofoton.data.DataSource
-import luz.carlos.desafiofoton.data.Movie
 import org.json.JSONArray
-import org.json.JSONObject
-import kotlin.random.Random
 
 class MoviesListViewModel(val dataSource: DataSource) : ViewModel() {
 

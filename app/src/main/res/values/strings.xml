@@ -57,7 +57,10 @@
 <!--    <string name="done_button_text">Done</string>-->
 <!--    <string name="fab_content_description">fab</string>-->
     <string name="movie_image_content_description">Pôster</string>
-    <string name="loading">Carregando...</string>
+    <string name="loading">Carregando…</string>
+    <string name="title">Título:</string>
+    <string name="runtime">Duração em minutos:</string>
+    <string name="genres">Gêneros:</string>
     <!--    <string name="remove_this_movie">Remove this movie</string>-->
 <!--    <string name="title_activity_add_movie">AddMovieActivity</string>-->
 

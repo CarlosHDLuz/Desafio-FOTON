@@ -12,9 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import luz.carlos.desafiofoton.data.Genre
 import luz.carlos.desafiofoton.data.Movie
-import luz.carlos.desafiofoton.data.MovieDetail
 import luz.carlos.desafiofoton.movieDetail.MOVIE_ID
 import luz.carlos.desafiofoton.movieDetail.MovieDetailActivity
 import org.json.JSONObject

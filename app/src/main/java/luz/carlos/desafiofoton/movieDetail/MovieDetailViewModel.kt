@@ -14,9 +14,9 @@ class MovieDetailViewModel(private val datasource: DataSource) : ViewModel() {
     }
 
     /* Queries datasource to remove a movie. */
-    fun removeMovie(movie: Movie) {
-        datasource.removeMovie(movie)
-    }
+//    fun removeMovie(movie: Movie) {
+//        datasource.removeMovie(movie)
+//    }
 }
 
 class MovieDetailViewModelFactory(private val context: Context) : ViewModelProvider.Factory {

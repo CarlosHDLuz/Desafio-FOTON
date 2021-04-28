@@ -7,7 +7,6 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
@@ -24,7 +23,7 @@ const val TMDB_POSTER_URL = "https://image.tmdb.org/t/p/w342/"
 
 class MovieDetailActivity : AppCompatActivity() {
 
-    private val MovieDetailViewModel by viewModels<MovieDetailViewModel> {
+    private val movieDetailViewModel by viewModels<MovieDetailViewModel> {
         MovieDetailViewModelFactory(this)
     }
 
@@ -53,18 +52,18 @@ class MovieDetailActivity : AppCompatActivity() {
 
         /* If currentMovieId is not null, get corresponding movie and set name, image and
         description */
-//        currentMovieId?.let {
-//            val currentMovie = MovieDetailViewModel.getMovieForId(it)
-//            movieTitle.text = currentMovie?.title
-//            if (currentMovie?.poster_path == null) {
-//                moviePoster.setImageResource(R.drawable.rose)
-//            } else {
-////                movieImage.setImageResource(currentMovie.poster_path)
-//                // Setar Pôster
-//            }
-////            movieDescription.text = currentMovie?.overview
-//
-//        }
+        currentMovieId?.let {
+            val currentMovie = movieDetailViewModel.getMovieForId(it)
+            movieTitle.text = currentMovie?.title
+            if (currentMovie?.poster_path == null) {
+                moviePoster.setImageResource(R.drawable.rose)
+            } /*else {
+//                movieImage.setImageResource(currentMovie.poster_path)
+                // Setar Pôster
+            }
+//            movieDescription.text = currentMovie?.overview
+            */
+        }
 
         if (currentMovieId == null )
             finish()
@@ -81,7 +80,7 @@ class MovieDetailActivity : AppCompatActivity() {
 //                    val id = movieDetailJsonObject.getInt("id")
                     movieTitle.text = movieDetailJsonObject.getString("title")
                     supportActionBar?.title = movieTitle.text
-                    val poster_path = movieDetailJsonObject.getString("poster_path")
+                    val posterPath = movieDetailJsonObject.getString("poster_path")
                     movieRuntime.text = movieDetailJsonObject.getInt("runtime").toString()
                     movieOverview.text = movieDetailJsonObject.getString("overview")
 
@@ -89,11 +88,14 @@ class MovieDetailActivity : AppCompatActivity() {
                     var genresString = ""
                     for ( i in 0 until genresJsonArray.length() ) {
                         val genre = genresJsonArray.getJSONObject(i)
-                        genresString += genre.getString("name") + '\n'
+                        genresString += genre.getString("name") + ", "
                     }
-                    movieGenres.text = genresString
-                    Log.d("MovieDetailActivity", "DEBUG: $TMDB_POSTER_URL$poster_path")
-                    Picasso.get().load("$TMDB_POSTER_URL$poster_path").placeholder(R.drawable.place_holder).into(moviePoster)
+                    // genresString.length-2 : remove last ", "
+                    movieGenres.text = genresString.subSequence(0, genresString.length-2)
+
+                    Log.d("Volley MovieDetailAct", "DEBUG: $TMDB_POSTER_URL$posterPath")
+
+                    Picasso.get().load("$TMDB_POSTER_URL$posterPath").placeholder(R.drawable.place_holder).into(moviePoster)
 
                     progressBar.visibility = ProgressBar.GONE
                 },
